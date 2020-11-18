@@ -973,7 +973,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0;
   list-style: none;
   color: #999;
-  text-align: left;
+  text-align: center;
   line-height: 20px;
 }
 
@@ -1346,3 +1346,63 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .footer-links a:hover {
   color: #1dc8cd;
 }
+
+.card {
+  background-color: #fff;
+  width: 23em;
+  border-radius: 0.625em;
+  padding: 2em 1em;
+  margin: auto;
+  box-shadow: 0 0 1em 0.5em rgba(51, 51, 51, 0.2);
+  text-align: center;
+}
+.card__inner {
+  outline: 0;
+}
+.card__heading {
+  color: #fbad01;
+  margin-bottom: 2em;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+.card__media {
+  margin: auto;
+  margin-bottom: 2em;
+  width: 100%;
+}
+.card__text {
+  color: #999;
+  margin-bottom: 2em;
+}
+
+.button {
+  background: #fecb00;
+  background: linear-gradient(135deg, #fecb00 0%, #fea201 100%);
+  padding: 0.75em 2em 0.875em;
+  text-decoration: none;
+  border-radius: 1.5em;
+  display: inline-block;
+  color: #fff;
+  margin-bottom: 2em;
+}
+
+.slick-dots {
+  list-style: none;
+}
+.slick-dots li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+.slick-dots span {
+  display: block;
+  background-color: #ccc;
+  height: 0.75em;
+  width: 0.75em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slick-dots .slick-active span {
+  background: #fecb00;
+  background: linear-gradient(135deg, #fecb00 0%, #fea201 100%);
+}
+
