@@ -26,6 +26,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+
   <!-- =======================================================
   * Template Name: Avilon - v2.1.0
   * Template URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
@@ -280,14 +282,14 @@
         <div class="row">
 
           <div class="card ml-2 mr-1 mb-3">
-            <iframe width="350" height="200" src="https://www.youtube.com/embed/4x_UYIlPk54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="345" height="200" src="https://www.youtube.com/embed/4x_UYIlPk54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="card-body">
               <h5 class="card-title">Love Flower #1</h5>
             </div>
           </div>
 
           <div class="card ml-2 mr-1 mb-3">
-            <iframe width="350" height="200" src="https://www.youtube.com/embed/4x_UYIlPk54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="345" height="200" src="https://www.youtube.com/embed/4x_UYIlPk54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="card-body">
               <h5 class="card-title">Love Flower #1</h5>
             </div>
@@ -295,7 +297,7 @@
 
 
           <div class="card ml-2 mr-1 mb-3">
-            <iframe width="350" height="200" src="https://www.youtube.com/embed/4x_UYIlPk54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="345" height="200" src="https://www.youtube.com/embed/4x_UYIlPk54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="card-body">
               <h5 class="card-title">Love Flower #1</h5>
             </div>
@@ -325,46 +327,28 @@
           <span class="section-divider"></span>
          
         </div>
-
         <div class="row">
-
-          <div class="col-lg-3 col-md-6 mb-3">
-              <div class="card">
-                <img class="card-img-top" src="t4.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Love Flower #1</h5>
+            <div class="card">
+              <div class="card__slider" data-element="carousel">
+              <div class="card__inner">
+                <img src="t2.jpg" alt="" class="card__media">
+                <p class="card__text">Demo Template #1</p>
+                <a href="#" class="button">Preview</a>
+              </div>
+              <div class="card__inner">
+                <img src="t3.jpg" alt="" class="card__media">
+                <p class="card__text">Demo Template #2</p>
+                <a href="#" class="button">Preview</a>
+              </div>
+              <div class="card__inner">
+                <img src="t4.jpg" alt="" class="card__media">
+                <p class="card__text">Demo Template #3</p>
+                <a href="#" class="button">Preview</a>
+              </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <img class="card-img-top" src="t2.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Love Flower #1</h5>
             </div>
-          </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <img class="card-img-top" src="t3.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Love Flower #1</h5>
-            </div>
-          </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <img class="card-img-top" src="t5.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Love Flower #1</h5>
-            </div>
-          </div>
-          </div>
-
-        </div>
+    
       </div>
     </section><!-- End Ganbar Section -->
 
@@ -482,9 +466,22 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/superfish/superfish.min.js"></script>
   <script src="assets/vendor/hoverIntent/hoverIntent.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+	$('[data-element="carousel"]').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: false,
+  customPaging: function (slider, i) {
+    return "<span></span>";
+  }
+});
+
+  </script>
 
 </body>
 
